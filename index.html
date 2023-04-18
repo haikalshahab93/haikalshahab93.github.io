@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas Revou Muhammad Haikal Shahab</title>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+</head>
+
+
+<nav class="navbar navbar-dark bg-primary fixed-top">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+            <img src="./image/logo.png" alt="Bootstrap" width="120" height="24">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar"
+            aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-end text-bg-primary" tabindex="-1" id="offcanvasDarkNavbar"
+            aria-labelledby="offcanvasDarkNavbarLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Revou Tugas</h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                    aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/revou">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Data Tambahan( Belum )</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<br>
+
+<header class="container bg-warning text-white mt-3">
+    <div class="row">
+        <div class="col-12 py-4 text-center">
+            <h1 class="display-2">Revou Tugas</h1>
+            <p class="lead">Software Engineer (Muhammad Haikal Shahab)</p>
+        </div>
+    </div>
+</header>
+
+<main class="container border p-md-5 p-2">
+    <div class="row g-2 g-md-4">
+        <div class="col-6 col-md-3">
+            <img class="w-100" src="./image/css,jpg" alt="gambar alam">
+        </div>
+        <div class="col-6 col-md-3">
+            <img class="w-100" src="./image/html.png" alt="gambar alam">
+        </div>
+        <div class="col-6 col-md-3">
+            <img class="w-100" src="./image/javascript.png" alt="gambar alam">
+        </div>
+        <div class="col-6 col-md-3">
+            <img class="w-100" src="./image/react.png" alt="gambar alam">
+        </div>
+    </div>
+
+    <hr>
+
+    <div class="container-fluid row">
+        <div class="col">
+           
+                <div class="">
+                    <div class="w3-col" style="width:50px"><i class="fa fa-user"></i></div>
+                    <input class="" name="name" id="name" type="text" placeholder="Name">
+                </div>
+                <div class="">
+                    <input class="" name="tanggal-lahir" id="tanggal-lahir" type="date" placeholder="Tanggal Lahir">
+                </div>
+                <div class="">
+                    <input class="" name="jenis-kelamin" id="jenis-kelamin" type="radio" placeholder="Jenis Kelamin">
+                    Laki-Laki
+                    <input class="" name="jenis-kelamin" id="jenis-kelamin" type="radio" placeholder="Jenis Kelamin">
+                    Perempuan
+                </div>
+                <div class="">
+                    <input class="" name="pesan" id="pesan" type="text" placeholder="Pesan">
+                </div>
+                <button onclick="kirim()">KIRIM</button>
+
+        </div>
+
+        <div class="col">
+            <div id="tampilan"></div>
+        </div>
+        
+    </div>
+</main>
+
+<footer class="container bg-light text-center">
+    <div class="row">
+        <div class="col-12 py-4">
+            &copy; Muhammad Haikal Shahab
+        </div>
+    </div>
+</footer>
+
+
+<script>
+    
+
+var id_name = document.getElementById("name");
+    var id_lahir = document.getElementById("tanggal-lahir");
+    var id_kelamin = document.getElementById("jenis-kelamin");
+    var id_pesan = document.getElementById("pesan");
+    
+    function kirim(){
+        tampilan.innerText = "Hai Nama Saya = "+id_name.value +" Saya Lahir Tanggal "+ id_lahir.value+" Jenis Kelamin "+ id_kelamin.value+" Pesan Saya "+ id_pesan.value; 
+      }
+</script>
+
+<script src="js/bootstrap.min.js"></script>
+</body>
+
+</html>
